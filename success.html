@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent Successfully - Tech & Environment Artist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .success-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        }
+
+        .success-icon {
+            font-size: 5rem;
+            color: #4CAF50;
+            margin-bottom: 2rem;
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        .success-message {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .success-message h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-message p {
+            color: #cccccc;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .return-home {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .return-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        @keyframes scaleIn {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="success-message">
+            <h1>Message Sent Successfully!</h1>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+        </div>
+        <a href="/" class="return-home">Return to Homepage <i class="fas fa-arrow-right"></i></a>
+    </div>
+</body>
+</html>
