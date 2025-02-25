@@ -33,43 +33,44 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Add fade-in animation for project cards
-const observerOptions = {
-    threshold: 0.1
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.project-card').forEach(card => {
-    observer.observe(card);
-});
-// Scroll reveal animation for projects
-function revealProjects() {
+// Initialize project card animations
+function initializeProjectCards() {
     const projects = document.querySelectorAll('.project-card');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('reveal');
+                observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.1
+        threshold: 0.1,
+        rootMargin: '50px'
     });
 
     projects.forEach(project => {
+        // Set initial opacity to ensure cards are visible without animation if needed
+        project.style.opacity = '.8';
         observer.observe(project);
     });
 }
 
-// Initialize animations when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    revealProjects();
+// Call initialization when DOM is ready
+document.addEventListener('DOMContentLoaded', initializeProjectCards);
+
+// Add window focus event listener to refresh the page
+window.addEventListener('focus', () => {
+    // Check if we're returning from another window
+    if (document.hidden === false) {
+        location.reload();
+    }
+});
+
+// Add window load event listener to scroll to top on page refresh
+window.addEventListener('load', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });

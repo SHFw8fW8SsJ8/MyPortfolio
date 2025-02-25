@@ -55,8 +55,8 @@
         <div class="project-grid">
             <a href="projects/environment-design.html" class="project-card">
                 <div class="project-image">
-                    <img src="images/project1.jpg" alt="Environment Design Project">
-                    <img class="preview-image" src="images/project1-preview.jpg" alt="Environment Design Preview">
+                    <img src="img/4.jpg" alt="Environment Design Project">
+                    
                     
                 </div>
                 <div class="project-info">
@@ -66,7 +66,7 @@
             </a>
             <a href="projects/technical-implementation.html" class="project-card">
                 <div class="project-image">
-                    <img src="images/project2.jpg" alt="Technical Implementation Project">
+                    <img src="img/3.jpg" alt="Technical Implementation Project">
                     
                 </div>
                 <div class="project-info">
@@ -76,7 +76,7 @@
             </a>
             <a href="projects/level-design.html" class="project-card">
                 <div class="project-image">
-                    <img src="images/project3.jpg" alt="Level Design Project">
+                    <img src="img/2.jpg" alt="Level Design Project">
                     
                 </div>
                 <div class="project-info">
@@ -86,7 +86,7 @@
             </a>
             <a href="projects/character-environment.html" class="project-card">
                 <div class="project-image">
-                    <img src="images/project4.jpg" alt="Character Environment Project">
+                    <img src="img/1.jpg" alt="Character Environment Project">
                     
                 </div>
                 <div class="project-info">
@@ -276,12 +276,32 @@
     <section id="contact" class="contact">
         <h2>Get in Touch</h2>
         <div class="contact-content">
-            <div class="social-links">
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-artstation"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="c6bed53f-4eb8-4aed-ab9c-ec60cf9e7832">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Your Message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
             </div>
-            <a href="mailto:your.email@example.com" class="contact-button">Email Me</a>
+            <div class="contact-info">
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-artstation"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+                
+            </div>
         </div>
     </section>
 
