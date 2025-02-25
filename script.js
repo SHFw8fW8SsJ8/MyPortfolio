@@ -50,3 +50,26 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.project-card').forEach(card => {
     observer.observe(card);
 });
+// Scroll reveal animation for projects
+function revealProjects() {
+    const projects = document.querySelectorAll('.project-card');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    projects.forEach(project => {
+        observer.observe(project);
+    });
+}
+
+// Initialize animations when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    revealProjects();
+});
