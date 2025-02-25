@@ -440,7 +440,7 @@ nav {
 }
 section {
     padding: 5rem 2rem;
-    max-width: 1600px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 .hero {
@@ -460,9 +460,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    margin-top: 2rem;
 }
 .project-card {
     background: #ffffff;
