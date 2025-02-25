@@ -107,7 +107,7 @@ h1 {
 
 .project-card {
     background: #ffffff;
-    border-radius: 16px;
+    border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 1;
