@@ -277,7 +277,7 @@
         <h2>Get in Touch</h2>
         <div class="contact-content">
             <div class="contact-form-container">
-                <form id="contactForm" class="contact-form" action="https://qwe.zapto.org/success.html" method="POST">
+                <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="c6bed53f-4eb8-4aed-ab9c-ec60cf9e7832">
                     
                     <div class="form-group">
@@ -292,6 +292,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required placeholder="Your Message" rows="5"></textarea>
                     </div>
+                    <input type="hidden" name="redirect" value="https://qwe.zapto.org/success">
                     <button type="submit" class="submit-button">Send Message <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
