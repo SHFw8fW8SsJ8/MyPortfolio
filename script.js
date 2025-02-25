@@ -51,7 +51,7 @@ function initializeProjectCards() {
 
     projects.forEach(project => {
         // Set initial opacity to ensure cards are visible without animation if needed
-        project.style.opacity = '.8';
+        project.style.opacity = '1';
         observer.observe(project);
     });
 }
@@ -59,13 +59,6 @@ function initializeProjectCards() {
 // Call initialization when DOM is ready
 document.addEventListener('DOMContentLoaded', initializeProjectCards);
 
-// Add window focus event listener to refresh the page
-window.addEventListener('focus', () => {
-    // Check if we're returning from another window
-    if (document.hidden === false) {
-        location.reload();
-    }
-});
 
 // Add window load event listener to scroll to top on page refresh
 window.addEventListener('load', () => {

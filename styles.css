@@ -786,7 +786,9 @@ h2 {
     box-shadow: 0 4px 15px rgba(0, 127, 255, 0.3);
 }
 footer {
-    background-color: var(--bg-secondary);
+    background: rgba(20, 20, 25, 0.0);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     text-align: center;
     padding: 1.5rem;
     color: var(--text-secondary);
