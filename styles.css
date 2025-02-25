@@ -50,35 +50,36 @@ nav {
     list-style: none;
     gap: 3rem;
 }
-
-.nav-links a {
-    color: var(--text-primary);
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    position: relative;
-    padding: 0.5rem 0;
+.view-all-projects {
+    text-align: center;
+    margin-top: 3rem;
 }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
+.view-all-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
     background: var(--accent);
-    transition: width 0.3s ease;
+    color: var(--text-primary);
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
 }
 
-.nav-links a:hover::after {
-    width: 100%;
+.view-all-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.nav-links a.active {
-    color: var(--accent);
+.view-all-button i {
+    transition: transform 0.3s ease;
 }
 
+.view-all-button:hover i {
+    transform: translateX(5px);
+}
 @media (max-width: 768px) {
     nav {
         padding: 1rem;
@@ -176,7 +177,7 @@ h2 {
 }
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
