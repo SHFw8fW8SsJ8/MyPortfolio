@@ -23,8 +23,30 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Tech & Environment Artist</h1>
-            <p>Creating immersive game worlds through technical artistry</p>
+            <div class="hero-profile">
+                <div class="hero-text">
+                    <h1>Tech & Environment Artist</h1>
+                    <p class="hero-subtitle">Creating immersive game worlds through technical artistry</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="cta-button">View My Work <i class="fas fa-arrow-right"></i></a>
+                <div class="hero-social">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-artstation"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -35,7 +57,7 @@
                 <div class="project-image">
                     <img src="images/project1.jpg" alt="Environment Design Project">
                     <img class="preview-image" src="images/project1-preview.jpg" alt="Environment Design Preview">
-                    <span class="project-number">01</span>
+                    
                 </div>
                 <div class="project-info">
                     <h3>Environment Design</h3>
@@ -45,7 +67,7 @@
             <a href="projects/technical-implementation.html" class="project-card">
                 <div class="project-image">
                     <img src="images/project2.jpg" alt="Technical Implementation Project">
-                    <span class="project-number">02</span>
+                    
                 </div>
                 <div class="project-info">
                     <h3>Technical Implementation</h3>
@@ -55,7 +77,7 @@
             <a href="projects/level-design.html" class="project-card">
                 <div class="project-image">
                     <img src="images/project3.jpg" alt="Level Design Project">
-                    <span class="project-number">03</span>
+                    
                 </div>
                 <div class="project-info">
                     <h3>Level Design</h3>
@@ -65,7 +87,7 @@
             <a href="projects/character-environment.html" class="project-card">
                 <div class="project-image">
                     <img src="images/project4.jpg" alt="Character Environment Project">
-                    <span class="project-number">04</span>
+                    
                 </div>
                 <div class="project-info">
                     <h3>Character Environment</h3>
@@ -80,32 +102,98 @@
 
     <section id="skills" class="skills">
         <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
+        <div class="skills-container">
+            <div class="skill-card modeling">
+                <div class="skill-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
                 <h3>3D Modeling & Texturing</h3>
-                <ul>
-                    <li>Maya</li>
-                    <li>Blender</li>
-                    <li>Substance Painter</li>
-                    <li>ZBrush</li>
-                </ul>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Maya</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Substance Painter</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Substance Designer</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">RizomUV</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">ZBrush</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="skill-category">
+
+            <div class="skill-card engines">
+                <div class="skill-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
                 <h3>Game Engines</h3>
-                <ul>
-                    <li>Unreal Engine</li>
-                    <li>Unity</li>
-                    <li>Custom Engine Experience</li>
-                </ul>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Unreal Engine</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 96%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Custom Engines</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="skill-category">
+
+            <div class="skill-card technical">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
                 <h3>Technical Skills</h3>
-                <ul>
-                    <li>Shader Development</li>
-                    <li>VFX Creation</li>
-                    <li>Performance Optimization</li>
-                    <li>Pipeline Development</li>
-                </ul>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Programming (Python & C++)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Pipeline Development</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 87%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Performance Optimization</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 73%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">VFX Creation</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
